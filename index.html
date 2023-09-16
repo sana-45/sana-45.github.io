@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <title>Stress Calculator App</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Stress Calculator App</h1>
+    <form id="stressForm">
+      <!-- Your 10 questions here -->
+      <div class="question">
+        <p>Question 1: In the last month, how often have you been upset because of something that
+          happened unexpectedly?</p>
+        <label for="q1_1">1</label>
+        <input type="radio" name="q1" id="q1_1" value="1" required>
+        <label for="q1_2">2</label>
+        <input type="radio" name="q1" id="q1_2" value="2">
+        <label for="q1_3">3</label>
+        <input type="radio" name="q1" id="q1_3" value="3">
+        <label for="q1_4">4</label>
+        <input type="radio" name="q1" id="q1_4" value="4">
+        <label for="q1_5">5</label>
+        <input type="radio" name="q1" id="q1_5" value="5">  
+      </div>
+
+      <div class="question">
+        <p>Question 2: In the last month, how often have you felt that you were unable to control the
+          important things in your life?</p>
+        <label for="q2_1">1</label>
+        <input type="radio" name="q2" id="q2_1" value="1" required>
+        <label for="q2_2">2</label>
+        <input type="radio" name="q2" id="q2_2" value="2">
+        <label for="q2_3">3</label>
+        <input type="radio" name="q2" id="q2_3" value="3">
+        <label for="q2_4">4</label>
+        <input type="radio" name="q2" id="q2_4" value="4">
+        <label for="q2_5">5</label>
+        <input type="radio" name="q2" id="q2_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 3: In the last month, how often have you felt nervous and stressed?</p>
+        <label for="q3_1">1</label>
+        <input type="radio" name="q3" id="q3_1" value="1" required>
+        <label for="q3_2">2</label>
+        <input type="radio" name="q3" id="q3_2" value="2">
+        <label for="q3_3">3</label>
+        <input type="radio" name="q3" id="q3_3" value="3">
+        <label for="q3_4">4</label>
+        <input type="radio" name="q3" id="q3_4" value="4">
+        <label for="q3_5">5</label>
+        <input type="radio" name="q3" id="q3_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 4: In the last month, how often have you felt confident about your ability to handle
+          your personal problems?</p>
+        <label for="q4_1">1</label>
+        <input type="radio" name="q4" id="q4_1" value="1" required>
+        <label for="q4_2">2</label>
+        <input type="radio" name="q4" id="q4_2" value="2">
+        <label for="q4_3">3</label>
+        <input type="radio" name="q4" id="q4_3" value="3">
+        <label for="q4_4">4</label>
+        <input type="radio" name="q4" id="q4_4" value="4">
+        <label for="q4_5">5</label>
+        <input type="radio" name="q4" id="q4_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 5: In the last month, how often have you felt that things were going your way?
+        </p>
+        <label for="q5_1">1</label>
+        <input type="radio" name="q5" id="q5_1" value="1" required>
+        <label for="q5_2">2</label>
+        <input type="radio" name="q5" id="q5_2" value="2">
+        <label for="q5_3">3</label>
+        <input type="radio" name="q5" id="q5_3" value="3">
+        <label for="q5_4">4</label>
+        <input type="radio" name="q5" id="q5_4" value="4">
+        <label for="q5_5">5</label>
+        <input type="radio" name="q5" id="q5_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 6: In the last month, how often have you found that you could not cope with
+          all the things that you had to do?</p>
+        <label for="q6_1">1</label>
+        <input type="radio" name="q6" id="q6_1" value="1" required>
+        <label for="q6_2">2</label>
+        <input type="radio" name="q6" id="q6_2" value="2">
+        <label for="q6_3">3</label>
+        <input type="radio" name="q6" id="q6_3" value="3">
+        <label for="q6_4">4</label>
+        <input type="radio" name="q6" id="q6_4" value="4">
+        <label for="q6_5">5</label>
+        <input type="radio" name="q6" id="q6_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 7: In the last month, how often have you been able to control irritations in
+          your life?</p>
+        <label for="q7_1">1</label>
+        <input type="radio" name="q7" id="q7_1" value="1" required>
+        <label for="q7_2">2</label>
+        <input type="radio" name="q7" id="q7_2" value="2">
+        <label for="q7_3">3</label>
+        <input type="radio" name="q7" id="q7_3" value="3">
+        <label for="q7_4">4</label>
+        <input type="radio" name="q7" id="q7_4" value="4">
+        <label for="q7_5">5</label>
+        <input type="radio" name="q7" id="q7_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 8:  In the last month, how often have you felt that you were on top of things?</p>
+        <label for="q8_1">1</label>
+        <input type="radio" name="q8" id="q8_1" value="1" required>
+        <label for="q8_2">2</label>
+        <input type="radio" name="q8" id="q8_2" value="2">
+        <label for="q8_3">3</label>
+        <input type="radio" name="q8" id="q8_3" value="3">
+        <label for="q8_4">4</label>
+        <input type="radio" name="q8" id="q8_4" value="4">
+        <label for="q8_5">5</label>
+        <input type="radio" name="q8" id="q8_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 9:  In the last month, how often have you been angered because of things that
+          happened that were outside of your control?</p>
+        <label for="q9_1">1</label>
+        <input type="radio" name="q9" id="q9_1" value="1" required>
+        <label for="q9_2">2</label>
+        <input type="radio" name="q9" id="q9_2" value="2">
+        <label for="q9_3">3</label>
+        <input type="radio" name="q9" id="q9_3" value="3">
+        <label for="q9_4">4</label>
+        <input type="radio" name="q9" id="q9_4" value="4">
+        <label for="q9_5">5</label>
+        <input type="radio" name="q9" id="q9_5" value="5">
+      </div>
+
+      <div class="question">
+        <p>Question 3: . In the last month, how often have you felt nervous and stressed?</p>
+        <label for="q10_1">1</label>
+        <input type="radio" name="q10" id="q10_1" value="1" required>
+        <label for="q10_2">2</label>
+        <input type="radio" name="q10" id="q10_2" value="2">
+        <label for="q10_3">3</label>
+        <input type="radio" name="q10" id="q10_3" value="3">
+        <label for="q10_4">4</label>
+        <input type="radio" name="q10" id="q10_4" value="4">
+        <label for="q10_5">5</label>
+        <input type="radio" name="q10" id="q10_5" value="5">
+      </div>
+
+      
+    
+    </form>
+    <button id="calculateBtn">Calculate Stress</button>
+    <div id="result" class="hidden">
+      <h2>Your stress level is: <span id="stressLevel">0</span></h2>
+      <p>Suggested activities to relieve stress:</p>
+      <ul id="suggestions">
+        <!-- Suggestions will be added here dynamically -->
+      </ul>
+    </div>
+  </div>
+  <script src="index.js">
+    
+  </script>
+</body>
+</html>
