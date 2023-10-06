@@ -1,27 +1,38 @@
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.getElementById("stressForm");
   const calculateBtn = document.getElementById("calculateBtn");
+  const resetBtn = document.getElementById("reset");
   const resultDiv = document.getElementById("result");
   const stressLevelSpan = document.getElementById("stressLevel");
   const suggestionsList = document.getElementById("suggestions");
+  const input = document.getElementsByTagName("input")
 
   calculateBtn.addEventListener("click", calculateStress);
+  resetBtn.addEventListener("click", resetSelections);
+
+
+  function resetSelections() {
+
+    // Loop through the radio buttons and uncheck them
+    for (var i = 0; i < input.length; i++) {
+      input[i].checked = false;
+    }
+  }
+
 
   function calculateStress(event) {
     event.preventDefault();
-
     let stressLevel = 0;
-    let sumValue = 0;
 
     // Loop through the form inputs and calculate stress level
-    for (let i = 0; i < form.elements.length; i++) {
-      if (form.elements[i].checked) {
-        stressLevel += parseInt(form.elements[i].value);
+    for (let i = 0; i < 50; i++) {
+      if (input[i].checked) {
+        stressLevel += parseInt(input[i].value);
       }
     }
 
     // Calculate average stress level
-    console.log("Stresslevel" + stressLevel)
+    console.log("Stresslevel" + "" + stressLevel)
 
     // Update the UI with stress level and suggestions
     stressLevelSpan.textContent = stressLevel.toFixed(2);
@@ -29,7 +40,9 @@ document.addEventListener("DOMContentLoaded", () => {
     resultDiv.classList.remove("hidden");
   }
   console.log(form.elements.length);
-  console.log(form.elements[1].type);
+  for (let i = 0; i < 50; i++) {
+    console.log(input[i].value);
+  }
 
   
   function generateSuggestions(stressLevel) {
