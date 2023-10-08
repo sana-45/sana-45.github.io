@@ -11,10 +11,12 @@ body {
   }
 
   label{
-    font-weight: 700;
+    font-size: large;
   }
   p{
     width: 100%;
+    font-size: large;
+    font-weight: bold;
   }
   
   .container {
@@ -41,9 +43,9 @@ body {
     .question{
       display: flex;
       flex-direction: column;
-      align-items: center;   
-      
-      
+      align-items: center;  
+      gap: 1rem; 
+    
     }
   }
 
@@ -53,9 +55,22 @@ body {
     align-items: center;
     gap: 3rem;
 
+
     div{
       display: flex;
-      flex-direction: row-reverse;
+      flex-direction: row-reverse
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    main{
+      gap: 0.75rem;
+      flex-direction: column;
+      height: 9rem;
+    }
+
+    .question{
+      gap: 1rem;
     }
   }
   
